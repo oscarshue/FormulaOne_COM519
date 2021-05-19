@@ -1,0 +1,102 @@
+[
+    {
+      "name": "Lewis Hamilton",
+      "number": 44,
+      "team": "Mercedes"
+    },
+    {
+      "name": "Valtteri Bottas",
+      "number": 77,
+      "team": "Mercedes"
+    },
+    {
+      "name": "Max Verstappen",
+      "number": 33,
+      "team": "Red Bull Racing"
+    },
+    {
+      "name": "Sergio Perez",
+      "number": 11,
+      "team": "Red Bull Racing"
+    },
+    {
+      "name": "Lando Norris",
+      "number": 4,
+      "team": "McLaren"
+    },
+    {
+      "name": "Daniel Ricciardo",
+      "number": 3,
+      "team": "McLaren"
+    },
+    {
+      "name": "Charles LeClerc",
+      "number": 16,
+      "team": "Ferrari"
+    },
+    {
+      "name": "Carlos Sainz",
+      "number": 55,
+      "team": "Ferrari"
+    },
+    {
+      "name": "Pierre Gasly",
+      "number": 10,
+      "team": "AlphaTauri"
+    },
+    {
+      "name": "Yuki Tsunoda",
+      "number": 22,
+      "team": "AlphaTauri"
+    },
+    {
+      "name": "Esteban Ocon",
+      "number": 31,
+      "team": "Alpine"
+    },
+    {
+      "name": "Fernando Alonso",
+      "number": 14,
+      "team": "Alpine"
+    },
+    {
+      "name": "Lance Stroll",
+      "number": 18,
+      "team": "Aston Martin"
+    },
+    {
+      "name": "Sebastian Vettel",
+      "number": 5,
+      "team": "Aston Martin"
+    },
+    {
+      "name": "Kimi Raikkonen",
+      "number": 7,
+      "team": "Alfa Romeo Racing"
+    },
+    {
+      "name": "Antonio Giovinazzi",
+      "number": 99,
+      "team": "Alfa Romeo Racing"
+    },
+    {
+      "name": "George Russell",
+      "number": 63,
+      "team": "Williams"
+    },
+    {
+      "name": "Nicholas Latifi",
+      "number": 6,
+      "team": "Williams"
+    },
+    {
+      "name": "Mick Schumacher",
+      "number": 47,
+      "team": "Haas F1 Team"
+    },
+    {
+      "name": "Nikita Mazepin",
+      "number": 9,
+      "team": "Haas F1 Team"
+    }
+]
