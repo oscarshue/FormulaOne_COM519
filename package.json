@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/oscarshue/FormulaOne_COM519#readme",
   "dependencies": {
+    "dotenv": "^9.0.2",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "mongodb": "^3.6.7",

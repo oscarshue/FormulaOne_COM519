@@ -22,7 +22,20 @@
                         </tr>
                     </thead>
                     <tbody>
-                        
+                        <ul>
+                            <%        
+                                drivers.forEach(driver => {
+                            %>
+                                    <tr>
+                                        <td><%=  driver._id  %></td>
+                                        <td><%=  driver.name  %></td>
+                                        <td><%=  driver.number %></td>
+                                        <td><%=  driver.team  %></td>
+                                    </tr>
+                            <%
+                                });
+                            %>
+                        </ul>
                     </tbody>
                 </table>
             </form>
