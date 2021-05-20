@@ -19,4 +19,5 @@ app.get("/drivers", (req, res) => {
 
 app.listen(port, () => {
   console.log(`FormulaOne_COM519 listening at http://localhost:${port}`);
+  chalk.green("✓")
 });
