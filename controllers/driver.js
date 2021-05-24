@@ -15,7 +15,7 @@ exports.create = async (req, res) => {
   let driver = new Driver({ name: req.body.driver_name, number: req.body.driver_number, team: req.body.driver_team }); 
   try {
     await driver.save();
-    res.redirect('/drivers/?message=driver has been created')
+    res.redirect('/drivers')
   } catch (e) {
       return res.status(400).send({
         message: JSON.parse(e),
@@ -31,6 +31,30 @@ exports.delete = async (req, res) => {
   } catch (e) {
     res.status(404).send({
       message: `could not delete  record ${id}.`,
+    });
+  }
+};
+
+exports.edit = async (req, res) => {
+  const id = req.params.id;
+  try {
+    const driver = await Driver.findById(id);
+    res.render('update_driver', { driver: driver, id: id });
+  } catch (e) {
+    res.status(404).send({
+      message: `couldn't find driver ${id}.`,
+    });
+  }
+};
+
+exports.update = async (req, res) => {
+  const id = req.params.id;
+  try {
+    const driver = await Driver.updateOne({ _id: id }, req.body);
+    res.redirect('/drivers');
+  } catch (e) {
+    res.status(404).send({
+      message: `couldn't find driver ${id}.`,
     });
   }
 };

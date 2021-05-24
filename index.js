@@ -42,3 +42,6 @@ app.get("/create_driver", (req, res) => {
 app.post("/create-driver", driverController.create);
 
 app.get("/driver/delete/:id", driverController.delete);
+
+app.get("/driver/update/:id", driverController.edit);
+app.post("/driver/update/:id", driverController.update);
