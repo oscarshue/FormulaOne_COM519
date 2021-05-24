@@ -5,6 +5,11 @@ const app = express();
 const port = 3000;
 const mongoose = require("mongoose");
 app.set("view engine", "ejs");
+var bodyParser = require('body-parser')
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));  
+
 
 // To access photos from the 'public' folder uncomment below line
 //app.use(express.static(path.join(__dirname, "public")));
@@ -29,3 +34,11 @@ app.listen(port, () => {
 });
 
 app.get("/drivers", driverController.list);
+
+app.get("/create_driver", (req, res) => {
+  res.render("create_driver");
+});
+
+app.post("/create-driver", driverController.create);
+
+app.get("/driver/delete/:id", driverController.delete);
