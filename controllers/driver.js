@@ -27,7 +27,7 @@ exports.delete = async (req, res) => {
   const id = req.params.id;
   try {
     await Driver.findByIdAndRemove(id);
-    res.redirect("/drivers");
+    res.redirect("/drivers/?message=driver has been deleted");
   } catch (e) {
     res.status(404).send({
       message: `could not delete record ${id}.`,
