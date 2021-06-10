@@ -12,8 +12,9 @@ This project is a simple web application that allows Create, Read, Update, and D
    - `npm install express --save`
    - `npm install mongodb --save`
    - `npm install mongoose`
-   - `npm install --save-dev nodemon` \(as a development dependency\)  
-4. Running the project:
+   - `npm install --save-dev nodemon` \(as a development dependency\)
+4. Import the `drivers.json` file into MongoDB
+5. Running the project:
    - In development mode type `npm run dev` into the terminal
    - In production mode type `npm start` into the terminal
-5. Go to your browser and search for (http://localhost:3000) in the address bar to display the project
+6. Go to your browser and search for (http://localhost:3000) in the address bar to display the project
