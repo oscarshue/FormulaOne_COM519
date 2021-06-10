@@ -1,7 +1,7 @@
-:racing_car: # FormulaOne_COM519 :racing_car:
+# :racing_car: FormulaOne_COM519
 This project is a simple web application that allows Create, Read, Update, and Delete functionality for a database of Formula One Drivers details including their Name, their Driver Number, and their Team.
 
-# How to Run
+# :racing_car: How to Run
 1. Clone this repository using (https://github.com/oscarshue/FormulaOne_COM519.git)
 2. Open the project in Visual Studio Code
 3. Install the relevant dependencies using `npm install`
