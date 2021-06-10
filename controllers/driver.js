@@ -30,7 +30,7 @@ exports.delete = async (req, res) => {
     res.redirect("/drivers");
   } catch (e) {
     res.status(404).send({
-      message: `could not delete  record ${id}.`,
+      message: `could not delete record ${id}.`,
     });
   }
 };
@@ -51,7 +51,7 @@ exports.update = async (req, res) => {
   const id = req.params.id;
   try {
     const driver = await Driver.updateOne({ _id: id }, req.body);
-    res.redirect('/drivers');
+    res.redirect('/drivers/?message=driver has been updated');
   } catch (e) {
     res.status(404).send({
       message: `couldn't find driver ${id}.`,

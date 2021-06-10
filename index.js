@@ -10,11 +10,9 @@ var bodyParser = require('body-parser')
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));  
 
-
-// To access photos from the 'public' folder uncomment below line
-//app.use(express.static(path.join(__dirname, "public")));
-
 const driverController = require("./controllers/driver");
+
+app.use(express.static(path.join(__dirname, "public")));
 
 const { WEB_PORT, MONGODB_URI } = process.env;
 
@@ -41,7 +39,7 @@ app.get("/create_driver", (req, res) => {
 
 app.post("/create-driver", driverController.create);
 
-app.get("/driver/delete/:id", driverController.delete);
+app.get("/drivers/delete/:id", driverController.delete);
 
-app.get("/driver/update/:id", driverController.edit);
-app.post("/driver/update/:id", driverController.update);
+app.get("/drivers/update/:id", driverController.edit);
+app.post("/drivers/update/:id", driverController.update);
