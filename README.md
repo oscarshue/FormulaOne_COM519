@@ -4,7 +4,15 @@ This project is a simple web application that allows Create, Read, Update, and D
 # :racing_car: How to Run
 1. Clone this repository using (https://github.com/oscarshue/FormulaOne_COM519.git)
 2. Open the project in Visual Studio Code
-3. Install the relevant dependencies using `npm install`
+3. Install the relevant dependencies listed below:
+   - `npm install`
+   - `npm install body-parser`
+   - `npm install dotenv`
+   - `npm install ejs`
+   - `npm install express --save`
+   - `npm install mongodb --save`
+   - `npm install mongoose`
+   - `npm install --save-dev nodemon` \(as a development dependency\)  
 4. Running the project:
    - In development mode type `npm run dev` into the terminal
    - In production mode type `npm start` into the terminal
