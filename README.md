@@ -5,5 +5,7 @@ This project is a simple web application that allows Create, Read, Update, and D
 1. Clone this repository using (https://github.com/oscarshue/FormulaOne_COM519.git)
 2. Open the project in Visual Studio Code
 3. Install the relevant dependencies using `npm install`
-4. Run the project by typing `npm run dev` into the terminal
+4. Running the project:
+   - In development mode type `npm run dev` into the terminal
+   - In production mode type `npm start` into the terminal
 5. Go to your browser and search for (http://localhost:3000) in the address bar to display the project
